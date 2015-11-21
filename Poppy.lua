@@ -90,4 +90,4 @@ end
 	   CastSpell(_W)
 		end
 end)
-
+PrintChat("Poppy Loaded!")
