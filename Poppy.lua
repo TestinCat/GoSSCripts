@@ -36,6 +36,7 @@ if Ignite ~= nil then TcMenu.Misc:Boolean("AutoIgnite", "Auto Ignite", true) end
 TcMenu.Misc:Boolean("Autolvl", "Auto level", true)
 TcMenu.Misc:DropDown("Autolvltable", "Priority", 1, {"W-Q-E", "Q-W-E"})
 
+--Copyied all From Deffy--
 local InterruptMenu = MenuConfig("Interrupt (E)", "Interrupt")
 
   for i, spell in pairs(CHANELLING_SPELLS) do
@@ -130,7 +131,7 @@ end)
    if Flash and IsReady(Flash) and IsReady(_E) and TcMenu.Combo.E.cf:Value() and ValidTarget(ElitePleb, 1100) then
    StunThisPlebV2(ElitePleb)
    end
-   
+
 --Drawings--
 OnDraw(function(myHero)
 local col = TcMenu.Drawings.color:Value()
@@ -186,3 +187,4 @@ end
 
 PrintChat("Poppy Script Loaded!")
 PrintChat("By Testin Cat :3!")
+PrintChat("Copyied some files From Deffy!")
