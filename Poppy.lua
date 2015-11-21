@@ -1,4 +1,4 @@
-if GetObjectName(GetMyHero()) ~= "Vayne" then return end
+if GetObjectName(GetMyHero()) ~= "Poppy" then return end
 
 (require "Inspired")
 (require "MapPositionGOS")
@@ -51,7 +51,7 @@ end)
 
 OnTick(function(myHero)
 	if Combo() or autoStun.getValue() then
-		AutoEiAC(GetTarget(eRange, DAMAGE_PHYSICAL))
+	   AutoEiAC(GetTarget(eRange, DAMAGE_PHYSICAL))
 	end
 
 --Combo--
@@ -77,8 +77,8 @@ OnTick(function(myHero)
 end
 
 --Lasthit--
-		if CanUseSpell(myHero, _Q) == READY and TCMenu.LaneClear.Q:Value() and ValidTarget(minion, 200) then
-		   CastTargetSpell(minion, _Q)
+	if CanUseSpell(myHero, _Q) == READY and TCMenu.LaneClear.Q:Value() and ValidTarget(minion, 200) then
+           CastTargetSpell(minion, _Q)
 		end
 		
 	end
@@ -87,7 +87,7 @@ end
 --Laneclear--
 
        if CanUseSpell(myHero, _Q) == READY and PoppyMenu.JungleClear.W:Value() and ValidTarget(mob, 200) then
-			CastSpell(_W)
+	   CastSpell(_W)
 		end
 end)
 
